@@ -16,3 +16,13 @@
 - [x] Remplacer la photo À propos et installer le logo transparent.
 - [x] Refaire le Top 5 en bulles animées avec les cinq photos indiquées.
 - [x] Éclaircir le beige et utiliser la police de titre de référence.
+- [x] Vérifier les pages, images, liens et points restants avant publication.
+- [x] Remplacer l’icône de l’onglet du navigateur par le logo Studio Zahaa.
+
+## Points relevés par la vérification (non modifiés)
+
+- Le formulaire de contact simule un envoi : destinataire et service d’envoi nécessaires avant activation.
+- Les adresses de référencement utilisent encore le domaine du projet d’origine ; les photos fonctionnent via ce domaine.
+- Les pages Le centre, Nos recommandations et Nous contacter partagent le titre de l’accueil ; llms.txt ne liste que l’accueil.
+- Une adresse inexistante affiche l’accueil au lieu d’une page introuvable.
+- Les informations légales restent à fournir ; tarifs, avis et commodités restent à confirmer par le centre.
