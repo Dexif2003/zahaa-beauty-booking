@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { HelmetProvider } from "react-helmet-async";
 import { Toaster } from "sonner";
 import "./styles.css";
 import { Nav } from "@/components/Nav";
@@ -16,6 +17,7 @@ import { AudiencePage } from "@/components/AudiencePage";
 import { CategoryPage } from "@/components/CategoryPage";
 import { audienceLabels, categories, type Audience } from "@/data/services";
 import { useReveal } from "@/hooks/use-reveal";
+import { Seo } from "@/components/Seo";
 
 const queryClient = new QueryClient();
 
@@ -27,15 +29,6 @@ function App() {
   const category = parts.length === 4 && parts[1] === "prestations" && audience
     ? categories.find((item) => item.id === parts[3] && item.audiences.includes(audience))
     : null;
-
-  useEffect(() => {
-    if (category && audience) {
-      document.title = `${category.label} | Studio Zahaa à Asnières-sur-Seine`;
-    } else if (audience) {
-      document.title = `${audienceLabels[audience]} | Studio Zahaa à Asnières-sur-Seine`;
-    }
-    return () => { document.title = "Studio Zahaa | Institut de Beauté à Asnières-sur-Seine"; };
-  }, [category, audience]);
 
   const page =
     path === "/le-centre" ? (
@@ -60,6 +53,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <Seo path={path} audience={audience} category={category} />
       <Nav />
       <main>{page}</main>
       <Footer />
@@ -78,6 +72,8 @@ if (!rootElement) {
 
 ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>,
 );
