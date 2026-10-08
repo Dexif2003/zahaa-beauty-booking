@@ -23,10 +23,9 @@ export function About() {
           </h2>
           <div className="my-8 h-px w-16 bg-gold" />
           <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
-            Studio Zahaa est un écrin dédié à la beauté, fondé et animé par Yasmina,
-            spécialiste en soins du visage, techniques coréennes, laser et épilation. Chaque
-            prestation est pensée comme une expérience sensorielle, alliant expertise pointue et
-            rituels d'exception.
+            Studio Zahaa est un écrin dédié à la beauté, fondé et animé par Yasmina, spécialiste en
+            soins du visage, techniques coréennes, laser et épilation. Chaque prestation est pensée
+            comme une expérience sensorielle, alliant expertise pointue et rituels d'exception.
           </p>
 
           <dl className="mt-10 grid gap-6 sm:grid-cols-2">

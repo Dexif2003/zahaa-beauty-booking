@@ -62,36 +62,63 @@ export function Nav() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:py-5">
-         <a href="/" className="flex shrink-0 items-center" aria-label="Studio Zahaa — accueil" onClick={closeMenu}>
-          <img src={logo} alt="Studio Zahaa" className={`h-auto w-36 sm:w-44 ${overHero ? "brightness-0 invert" : ""}`} />
+        <a
+          href="/"
+          className="flex shrink-0 items-center"
+          aria-label="Studio Zahaa — accueil"
+          onClick={closeMenu}
+        >
+          <img
+            src={logo}
+            alt="Studio Zahaa"
+            className={`h-auto w-36 sm:w-44 ${overHero ? "brightness-0 invert" : ""}`}
+          />
         </a>
 
         <nav className="hidden items-center gap-9 md:flex" aria-label="Navigation principale">
-           <div className="group relative">
-             <a href="/#top-services" className={`text-sm transition-colors ${overHero ? "text-ivory hover:text-gold" : "text-foreground/80 hover:text-foreground"}`}>Prestations</a>
-             <div className="invisible absolute left-1/2 top-full z-10 min-w-56 -translate-x-1/2 pt-4 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
-               <div className="border border-border bg-background p-2 shadow-lg">
-                 {audiences.map((audience) => (
-                   <div key={audience} className="group/audience relative">
-                     <a href={audienceHref(audience)} className="block px-4 py-3 text-sm hover:bg-secondary">{audienceLabels[audience]} →</a>
-                     <div className="invisible absolute left-full top-0 min-w-56 pl-2 opacity-0 group-hover/audience:visible group-hover/audience:opacity-100 group-focus-within/audience:visible group-focus-within/audience:opacity-100">
-                       <div className="border border-border bg-background p-2 shadow-lg">
-                         {audienceCategoryOrder[audience].map((id) => {
-                           const category = categories.find((item) => item.id === id);
-                           return category ? <a key={id} href={categoryHref(audience, id)} className="block px-4 py-3 text-sm hover:bg-secondary">{category.label}</a> : null;
-                         })}
-                       </div>
-                     </div>
-                   </div>
-                 ))}
-               </div>
-             </div>
-           </div>
+          <div className="group relative">
+            <a
+              href="/#top-services"
+              className={`text-sm transition-colors ${overHero ? "text-ivory hover:text-gold" : "text-foreground/80 hover:text-foreground"}`}
+            >
+              Prestations
+            </a>
+            <div className="invisible absolute left-1/2 top-full z-10 min-w-56 -translate-x-1/2 pt-4 opacity-0 transition-all group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+              <div className="border border-border bg-background p-2 shadow-lg">
+                {audiences.map((audience) => (
+                  <div key={audience} className="group/audience relative">
+                    <a
+                      href={audienceHref(audience)}
+                      className="block px-4 py-3 text-sm hover:bg-secondary"
+                    >
+                      {audienceLabels[audience]} →
+                    </a>
+                    <div className="invisible absolute left-full top-0 min-w-56 pl-2 opacity-0 group-hover/audience:visible group-hover/audience:opacity-100 group-focus-within/audience:visible group-focus-within/audience:opacity-100">
+                      <div className="border border-border bg-background p-2 shadow-lg">
+                        {audienceCategoryOrder[audience].map((id) => {
+                          const category = categories.find((item) => item.id === id);
+                          return category ? (
+                            <a
+                              key={id}
+                              href={categoryHref(audience, id)}
+                              className="block px-4 py-3 text-sm hover:bg-secondary"
+                            >
+                              {category.label}
+                            </a>
+                          ) : null;
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
           {links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-               className={`text-sm transition-colors ${overHero ? "text-ivory hover:text-gold" : "text-foreground/80 hover:text-foreground"}`}
+              className={`text-sm transition-colors ${overHero ? "text-ivory hover:text-gold" : "text-foreground/80 hover:text-foreground"}`}
             >
               {link.label}
             </a>
@@ -99,7 +126,7 @@ export function Nav() {
           <div className="group relative">
             <button
               type="button"
-               className={`flex items-center gap-1 text-sm transition-colors ${overHero ? "text-ivory hover:text-gold" : "text-foreground/80 hover:text-foreground"}`}
+              className={`flex items-center gap-1 text-sm transition-colors ${overHero ? "text-ivory hover:text-gold" : "text-foreground/80 hover:text-foreground"}`}
             >
               En savoir plus
               <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
@@ -134,7 +161,7 @@ export function Nav() {
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={open}
           onClick={() => setOpen((value) => !value)}
-           className={`grid h-10 w-10 place-items-center border md:hidden ${overHero ? "border-ivory text-ivory" : "border-border"}`}
+          className={`grid h-10 w-10 place-items-center border md:hidden ${overHero ? "border-ivory text-ivory" : "border-border"}`}
         >
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
@@ -185,24 +212,36 @@ export function Nav() {
                           const categoryOpen = openCategory === `${audience}-${category.id}`;
                           return (
                             <div key={category.id} className="border-b border-border last:border-0">
-                               <div className="flex items-center justify-between gap-3">
-                                 <a href={categoryHref(audience, category.id)} onClick={closeMenu} className="flex-1 py-4 text-left text-sm uppercase tracking-[0.12em]">{category.label}</a>
-                                 <button
-                                   type="button"
-                                   aria-label={`Afficher les soins : ${category.label}`}
-                                   aria-expanded={categoryOpen}
-                                   onClick={() => setOpenCategory(categoryOpen ? null : `${audience}-${category.id}`)}
-                                   className="grid h-10 w-10 shrink-0 place-items-center"
-                                 >
-                                   <ChevronDown className={`h-4 w-4 transition-transform ${categoryOpen ? "rotate-180 text-gold" : ""}`} />
-                                 </button>
-                               </div>
+                              <div className="flex items-center justify-between gap-3">
+                                <a
+                                  href={categoryHref(audience, category.id)}
+                                  onClick={closeMenu}
+                                  className="flex-1 py-4 text-left text-sm uppercase tracking-[0.12em]"
+                                >
+                                  {category.label}
+                                </a>
+                                <button
+                                  type="button"
+                                  aria-label={`Afficher les soins : ${category.label}`}
+                                  aria-expanded={categoryOpen}
+                                  onClick={() =>
+                                    setOpenCategory(
+                                      categoryOpen ? null : `${audience}-${category.id}`,
+                                    )
+                                  }
+                                  className="grid h-10 w-10 shrink-0 place-items-center"
+                                >
+                                  <ChevronDown
+                                    className={`h-4 w-4 transition-transform ${categoryOpen ? "rotate-180 text-gold" : ""}`}
+                                  />
+                                </button>
+                              </div>
                               {categoryOpen && (
                                 <div className="pb-4 pl-4">
                                   {category.services.map((service) => (
                                     <a
                                       key={service.name}
-                                       href={categoryHref(audience, category.id)}
+                                      href={categoryHref(audience, category.id)}
                                       onClick={closeMenu}
                                       className="block py-2 text-sm leading-snug text-muted-foreground transition-colors hover:text-foreground"
                                     >

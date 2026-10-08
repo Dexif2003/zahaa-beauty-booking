@@ -24,10 +24,11 @@ function App() {
   useReveal();
   const path = window.location.pathname.replace(/\/$/, "") || "/";
   const parts = path.split("/");
-  const audience = parts[2] === "femme" || parts[2] === "homme" ? parts[2] as Audience : null;
-  const category = parts.length === 4 && parts[1] === "prestations" && audience
-    ? categories.find((item) => item.id === parts[3] && item.audiences.includes(audience))
-    : null;
+  const audience = parts[2] === "femme" || parts[2] === "homme" ? (parts[2] as Audience) : null;
+  const category =
+    parts.length === 4 && parts[1] === "prestations" && audience
+      ? categories.find((item) => item.id === parts[3] && item.audiences.includes(audience))
+      : null;
 
   const page =
     path === "/le-centre" ? (
