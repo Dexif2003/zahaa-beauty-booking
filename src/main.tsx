@@ -15,7 +15,7 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 import { CentrePage, ContactPage, RecommendationsPage } from "@/components/ContentPage";
 import { AudiencePage } from "@/components/AudiencePage";
 import { CategoryPage } from "@/components/CategoryPage";
-import { audienceLabels, categories, type Audience } from "@/data/services";
+import { categories, type Audience } from "@/data/services";
 import { useReveal } from "@/hooks/use-reveal";
 import { Seo } from "@/components/Seo";
 
