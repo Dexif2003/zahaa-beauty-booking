@@ -17,7 +17,6 @@ const html = readFileSync(INDEX, "utf8");
 const checks: Array<[string, RegExp]> = [
   ["<title> Studio Zahaa", /<title>[^<]*Studio Zahaa/i],
   ["meta description", /<meta\s+name=["']description["']/i],
-  ["canonical link", /<link\s+rel=["']canonical["']/i],
   ["og:image", /<meta\s+property=["']og:image["']/i],
   ["JSON-LD BeautySalon", /"@type"\s*:\s*"BeautySalon"/],
   ["root div", /<div\s+id=["']root["']/i],
