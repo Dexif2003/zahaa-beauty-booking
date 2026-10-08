@@ -22,14 +22,14 @@
 ## Points relevés par la vérification (non modifiés)
 
 - Le formulaire de contact simule un envoi : destinataire et service d’envoi nécessaires avant activation.
-- Les adresses de référencement utilisent encore le domaine du projet d’origine ; les photos fonctionnent via ce domaine.
-- Les pages Le centre, Nos recommandations et Nous contacter partagent le titre de l’accueil ; llms.txt ne liste que l’accueil.
+- Les photos fonctionnent encore via le domaine du projet d’origine.
+- llms.txt ne liste que l’accueil.
 - Une adresse inexistante affiche l’accueil au lieu d’une page introuvable.
 - Les informations légales restent à fournir ; tarifs, avis et commodités restent à confirmer par le centre.
 
 ## SEO
 
-- [ ] Corriger les domaines du sitemap et des règles d’indexation.
-- [ ] Ajouter des titres, descriptions et adresses canoniques propres à chaque page.
-- [ ] Corriger les aperçus sociaux propres à chaque page dans les limites du site actuel.
-- [ ] Activer l’envoi réel du formulaire de contact — adresse destinataire requise.
+- [x] Corriger les domaines du sitemap et des règles d’indexation.
+- [x] Ajouter des titres, descriptions et adresses canoniques propres à chaque page.
+- [x] Corriger les aperçus sociaux propres à chaque page dans les limites du site actuel.
+- [ ] Activer l’envoi réel du formulaire de contact — domaine d’envoi requis.
