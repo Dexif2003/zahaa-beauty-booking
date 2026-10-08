@@ -53,7 +53,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <Seo path={path} audience={audience} category={category} />
+      <Seo path={path} audience={audience} category={category ?? undefined} />
       <Nav />
       <main>{page}</main>
       <Footer />
