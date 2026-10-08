@@ -11,8 +11,10 @@ import {
 } from "@/data/services";
 
 const intros: Record<Audience, string> = {
-  femme: "Épilation laser, électrolyse, peelings, soins du visage coréens et beauté du regard : découvrez tous les soins dédiés aux femmes et réservez votre rendez-vous.",
-  homme: "Épilation laser, électrolyse, soins du visage et éclat du sourire : découvrez tous les soins dédiés aux hommes et réservez votre rendez-vous.",
+  femme:
+    "Épilation laser, électrolyse, peelings, soins du visage coréens et beauté du regard : découvrez tous les soins dédiés aux femmes et réservez votre rendez-vous.",
+  homme:
+    "Épilation laser, électrolyse, soins du visage et éclat du sourire : découvrez tous les soins dédiés aux hommes et réservez votre rendez-vous.",
 };
 
 export function AudiencePage({ audience }: { audience: Audience }) {
@@ -25,10 +27,15 @@ export function AudiencePage({ audience }: { audience: Audience }) {
     <>
       <header className="bg-secondary/50 pb-14 pt-32 md:pb-20 md:pt-44">
         <div className="mx-auto max-w-7xl px-6">
-          <a href="/#top-services" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground">
+          <a
+            href="/#top-services"
+            className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
+          >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Toutes les prestations
           </a>
-          <p className="mt-12 text-xs uppercase tracking-[0.25em] text-gold">Studio Zahaa · Asnières-sur-Seine</p>
+          <p className="mt-12 text-xs uppercase tracking-[0.25em] text-gold">
+            Studio Zahaa · Asnières-sur-Seine
+          </p>
           <h1 className="mt-3 text-5xl leading-tight md:text-7xl">{audienceLabels[audience]}</h1>
           <p className="mt-5 max-w-2xl text-muted-foreground">{intros[audience]}</p>
           <a
@@ -65,12 +72,16 @@ export function AudiencePage({ audience }: { audience: Audience }) {
                     className="flex min-h-56 flex-col justify-between border border-border bg-card p-6 md:p-8"
                   >
                     <div>
-                      <p className="text-xs uppercase tracking-[0.16em] text-gold">{category.label}</p>
+                      <p className="text-xs uppercase tracking-[0.16em] text-gold">
+                        {category.label}
+                      </p>
                       <h3 className="mt-5 text-2xl leading-tight">{service.name}</h3>
                     </div>
                     <div className="mt-8 flex items-end justify-between gap-3 border-t border-border pt-5">
                       <div>
-                        <span className="block text-xs text-muted-foreground">{service.duration}</span>
+                        <span className="block text-xs text-muted-foreground">
+                          {service.duration}
+                        </span>
                         <span className="font-serif text-2xl text-gold">{service.price}</span>
                       </div>
                       <Button asChild size="sm" className="rounded-none">

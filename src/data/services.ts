@@ -106,21 +106,41 @@ export const categoryHref = (audience: Audience, categoryId: string) =>
   `/prestations/${audience}/${categoryId}`;
 
 export const featuredServices = [
-  { id: "electrolyse", name: "Électrolyse", categoryId: "electrolyse", description: "L'électrolyse élimine durablement les poils un à un à la racine, même les plus fins, clairs ou résistants." },
-  { id: "peeling-lift", name: "Peeling lifting +", categoryId: "peeling", description: "Le Peeling lifting + lisse les ridules, raffermit la peau et ravive l'éclat du teint pour une peau plus lisse, tonique et lumineuse." },
+  {
+    id: "electrolyse",
+    name: "Électrolyse",
+    categoryId: "electrolyse",
+    description:
+      "L'électrolyse élimine durablement les poils un à un à la racine, même les plus fins, clairs ou résistants.",
+  },
+  {
+    id: "peeling-lift",
+    name: "Peeling lifting +",
+    categoryId: "peeling",
+    description:
+      "Le Peeling lifting + lisse les ridules, raffermit la peau et ravive l'éclat du teint pour une peau plus lisse, tonique et lumineuse.",
+  },
   {
     id: "dentaire",
     name: "Esthétique dentaire",
     categoryId: "smile",
-    description: "L'esthétique dentaire ravive l'éclat naturel des dents pour un sourire plus lumineux, harmonieux et éclatant.",
+    description:
+      "L'esthétique dentaire ravive l'éclat naturel des dents pour un sourire plus lumineux, harmonieux et éclatant.",
   },
   {
     id: "rehydratation",
     name: "Soin sur mesure réhydratation globale",
     categoryId: "visage",
-    description: "Un soin personnalisé qui hydrate intensément, apaise les tiraillements et redonne souplesse, confort et éclat aux peaux déshydratées.",
+    description:
+      "Un soin personnalisé qui hydrate intensément, apaise les tiraillements et redonne souplesse, confort et éclat aux peaux déshydratées.",
   },
-  { id: "laser", name: "Laser diode / yag", categoryId: "laser", description: "Une épilation durable qui cible le poil à la racine pour réduire progressivement la repousse et retrouver une peau plus douce." },
+  {
+    id: "laser",
+    name: "Laser diode / yag",
+    categoryId: "laser",
+    description:
+      "Une épilation durable qui cible le poil à la racine pour réduire progressivement la repousse et retrouver une peau plus douce.",
+  },
 ] as const;
 
 // Fiche Google de Studio Zahaa, ouverte directement sur l'onglet « Avis ».

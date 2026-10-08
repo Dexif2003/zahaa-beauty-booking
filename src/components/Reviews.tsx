@@ -49,8 +49,14 @@ export function Reviews() {
             />
           ))}
         </div>
-        <Button asChild variant="outline" className="mt-9 rounded-none border-gold bg-transparent text-ivory hover:bg-gold hover:text-noir">
-          <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer">Voir les avis sur Google ↗</a>
+        <Button
+          asChild
+          variant="outline"
+          className="mt-9 rounded-none border-gold bg-transparent text-ivory hover:bg-gold hover:text-noir"
+        >
+          <a href={GOOGLE_REVIEWS_URL} target="_blank" rel="noopener noreferrer">
+            Voir les avis sur Google ↗
+          </a>
         </Button>
       </div>
     </section>

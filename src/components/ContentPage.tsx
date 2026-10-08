@@ -78,10 +78,9 @@ export function CentrePage() {
             </h2>
             <div className="my-7 h-px w-16 bg-gold" />
             <p className="leading-relaxed text-foreground/75 md:text-lg">
-              Fondé par Yasmina, Studio Zahaa conjugue savoir-faire, technologies ciblées
-              et sens du détail. Ici, chaque soin est envisagé comme un moment unique : un
-              diagnostic attentif, un protocole ajusté et des conseils pensés pour vous accompagner
-              durablement.
+              Fondé par Yasmina, Studio Zahaa conjugue savoir-faire, technologies ciblées et sens du
+              détail. Ici, chaque soin est envisagé comme un moment unique : un diagnostic attentif,
+              un protocole ajusté et des conseils pensés pour vous accompagner durablement.
             </p>
             <p className="mt-5 leading-relaxed text-foreground/75 md:text-lg">
               Dans une atmosphère calme et élégante, nous vous accueillons avec bienveillance pour

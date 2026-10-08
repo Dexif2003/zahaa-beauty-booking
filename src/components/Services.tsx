@@ -49,14 +49,17 @@ export function Services() {
               }`}
             >
               {audienceLabels[item]}
-          </button>
-           ))}
-         </div>
-         <div className="reveal mt-4 text-center">
-           <a href={audienceHref(audience)} className="text-xs uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:text-gold">
-             Voir la page {audienceLabels[audience].toLowerCase()} →
-           </a>
-         </div>
+            </button>
+          ))}
+        </div>
+        <div className="reveal mt-4 text-center">
+          <a
+            href={audienceHref(audience)}
+            className="text-xs uppercase tracking-[0.14em] text-muted-foreground transition-colors hover:text-gold"
+          >
+            Voir la page {audienceLabels[audience].toLowerCase()} →
+          </a>
+        </div>
 
         <div className="mt-12 space-y-3">
           {visible.map((category) => (
@@ -133,7 +136,12 @@ function CategoryAccordion({
               </div>
             </div>
           ))}
-          <a href={categoryHref(audience, category.id)} className="inline-block border-b border-gold pb-1 text-sm text-foreground hover:text-gold">Voir la page de cette catégorie →</a>
+          <a
+            href={categoryHref(audience, category.id)}
+            className="inline-block border-b border-gold pb-1 text-sm text-foreground hover:text-gold"
+          >
+            Voir la page de cette catégorie →
+          </a>
         </div>
       )}
     </article>

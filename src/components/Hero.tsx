@@ -23,7 +23,12 @@ export function Hero() {
 
         <h1 className="w-full">
           <span className="sr-only">Studio Zahaa – Institut de Beauté à Asnières-sur-Seine</span>
-          <img src={logo} alt="" aria-hidden="true" className="mx-auto w-[min(82vw,590px)] brightness-0 invert" />
+          <img
+            src={logo}
+            alt=""
+            aria-hidden="true"
+            className="mx-auto w-[min(82vw,590px)] brightness-0 invert"
+          />
         </h1>
 
         <div className="my-8 h-px w-24 bg-gold" />
@@ -33,8 +38,21 @@ export function Hero() {
         </p>
 
         <div className="mt-12 flex flex-col items-center gap-6 sm:flex-row">
-          <Button asChild className="rounded-none bg-gold px-8 py-6 text-sm uppercase text-noir hover:bg-gold-soft"><a href={BOOKSY_URL} target="_blank" rel="noreferrer">Prendre rendez-vous</a></Button>
-          <Button asChild variant="outline" className="rounded-none border-ivory/40 bg-transparent px-8 py-6 text-sm uppercase text-ivory hover:bg-ivory/10 hover:text-ivory"><a href="#top-services">Découvrir</a></Button>
+          <Button
+            asChild
+            className="rounded-none bg-gold px-8 py-6 text-sm uppercase text-noir hover:bg-gold-soft"
+          >
+            <a href={BOOKSY_URL} target="_blank" rel="noreferrer">
+              Prendre rendez-vous
+            </a>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            className="rounded-none border-ivory/40 bg-transparent px-8 py-6 text-sm uppercase text-ivory hover:bg-ivory/10 hover:text-ivory"
+          >
+            <a href="#top-services">Découvrir</a>
+          </Button>
         </div>
 
         <div className="mt-14 flex items-center gap-3 text-ivory/85">
