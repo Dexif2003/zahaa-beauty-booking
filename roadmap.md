@@ -16,3 +16,5 @@
 - [x] Remplacer la photo À propos et installer le logo transparent.
 - [x] Refaire le Top 5 en bulles animées avec les cinq photos indiquées.
 - [x] Éclaircir le beige et utiliser la police de titre de référence.
+- [ ] Vérifier les pages, images, liens et points restants avant publication.
+- [ ] Remplacer l’icône de l’onglet du navigateur par le logo Studio Zahaa.
