@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 import { audienceLabels, type Audience, type Category } from "@/data/services";
 
 const SITE_URL = "https://zahaa-beauty-booking.lovable.app";
@@ -43,16 +43,21 @@ export function Seo({ path, audience, category }: SeoProps) {
 
   const canonical = `${SITE_URL}${path === "/" ? "/" : path}`;
 
-  return (
-    <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
-      <link rel="canonical" href={canonical} />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonical} />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
-    </Helmet>
-  );
+  useEffect(() => {
+    document.title = title;
+
+    const setContent = (selector: string, content: string) => {
+      document.querySelector<HTMLMetaElement>(selector)?.setAttribute("content", content);
+    };
+
+    document.querySelector<HTMLLinkElement>('link[rel="canonical"]')?.setAttribute("href", canonical);
+    setContent('meta[name="description"]', description);
+    setContent('meta[property="og:title"]', title);
+    setContent('meta[property="og:description"]', description);
+    setContent('meta[property="og:url"]', canonical);
+    setContent('meta[name="twitter:title"]', title);
+    setContent('meta[name="twitter:description"]', description);
+  }, [canonical, description, title]);
+
+  return null;
 }
