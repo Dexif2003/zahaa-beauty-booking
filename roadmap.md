@@ -18,8 +18,11 @@
 - [x] Éclaircir le beige et utiliser la police de titre de référence.
 - [x] Vérifier les pages, images, liens et points restants avant publication.
 - [x] Remplacer l’icône de l’onglet du navigateur par le logo Studio Zahaa.
-- [ ] Activer l’envoi réel du formulaire de contact — il simule actuellement un envoi ; destinataire à fournir.
-- [ ] Actualiser les adresses de référencement vers le domaine de ce projet (les photos fonctionnent via leur domaine d’origine).
-- [ ] Donner un titre distinct aux pages Le centre, Nos recommandations et Nous contacter et compléter llms.txt.
-- [ ] Prévoir une page introuvable pour les adresses inexistantes.
-- [ ] Fournir les informations légales de l’entreprise et valider les tarifs, avis et commodités affichés avec le centre.
+
+## Points relevés par la vérification (non modifiés)
+
+- Le formulaire de contact simule un envoi : destinataire et service d’envoi nécessaires avant activation.
+- Les adresses de référencement utilisent encore le domaine du projet d’origine ; les photos fonctionnent via ce domaine.
+- Les pages Le centre, Nos recommandations et Nous contacter partagent le titre de l’accueil ; llms.txt ne liste que l’accueil.
+- Une adresse inexistante affiche l’accueil au lieu d’une page introuvable.
+- Les informations légales restent à fournir ; tarifs, avis et commodités restent à confirmer par le centre.
