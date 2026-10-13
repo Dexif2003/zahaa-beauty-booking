@@ -16,7 +16,7 @@ function PageIntro({ eyebrow, title, introduction }: PageIntroProps) {
     <header className="bg-secondary/50 pb-20 pt-36 md:pb-24 md:pt-44">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <span className="text-xs uppercase tracking-[0.4em] text-gold">{eyebrow}</span>
-        <h1 className="mt-5 text-5xl leading-tight md:text-7xl">{title}</h1>
+        <h1 className="mt-5 text-4xl leading-tight sm:text-5xl md:text-7xl">{title}</h1>
         <div className="mx-auto my-8 h-px w-16 bg-gold" />
         <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground/75 md:text-lg">
           {introduction}
@@ -258,7 +258,7 @@ export function NotFoundPage() {
   return (
     <section className="flex min-h-[60vh] flex-col items-center justify-center bg-secondary/50 px-6 py-36 text-center">
       <span className="text-xs uppercase tracking-[0.4em] text-gold">Erreur 404</span>
-      <h1 className="mt-5 text-5xl leading-tight md:text-7xl">Page introuvable</h1>
+      <h1 className="mt-5 text-4xl leading-tight sm:text-5xl md:text-7xl">Page introuvable</h1>
       <div className="my-8 h-px w-16 bg-gold" />
       <p className="mx-auto max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg">
         La page que vous cherchez n’existe pas ou a été déplacée. Retrouvez l’accueil et l’ensemble

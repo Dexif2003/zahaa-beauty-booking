@@ -35,7 +35,7 @@ export function CategoryPage({ audience, categoryId }: { audience: Audience; cat
           <p className="mt-12 text-xs uppercase tracking-[0.25em] text-gold">
             {audienceLabels[audience]} · Asnières-sur-Seine
           </p>
-          <h1 className="mt-3 text-5xl leading-tight md:text-7xl">{category.label}</h1>
+          <h1 className="mt-3 text-4xl leading-tight sm:text-5xl md:text-7xl">{category.label}</h1>
           <p className="mt-5 text-muted-foreground">
             Découvrez nos soins et choisissez votre prochain rendez-vous.
           </p>
