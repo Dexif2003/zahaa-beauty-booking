@@ -1,4 +1,3 @@
-import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { WHATSAPP_URL } from "@/data/studio";
 import { BOOKSY_URL } from "@/data/services";
 
@@ -70,16 +69,13 @@ export function Contact() {
               </a>
             </div>
 
-            <div className="mt-auto pt-8">
+            <div className="mt-8 border-t border-border pt-6">
               <p className="text-xs uppercase tracking-widest text-muted-foreground">
                 Vous êtes déjà sur WhatsApp ?
               </p>
               <p className="mt-2 font-serif text-lg">
-                Le petit bouton en bas de l’écran ouvre aussi notre discussion.
+                Le petit bouton vert en bas de l’écran ouvre aussi notre discussion.
               </p>
-              <div className="mt-4">
-                <WhatsAppCTA />
-              </div>
             </div>
           </div>
         </div>
