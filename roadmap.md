@@ -1,5 +1,12 @@
 # Roadmap
 
+## Modifications du studio
+
+- [x] Ajouter la bulle WhatsApp reliée au +33 7 88 84 38 36 sans recouvrir Réserver.
+- [x] Retirer Adresse et Commodités sous À propos et le texte de zone desservie ; vérifier Yasmina.
+- [x] Afficher les sept valeurs fournies en catégories déroulantes sur l’accueil et Le centre.
+- [x] Vérifier les valeurs et WhatsApp sur téléphone et ordinateur, ainsi que le lint.
+
 - [x] Créer le menu mobile en cascade Femme/Homme.
 - [x] Classer les soins par catégorie et public.
 - [x] Ajouter les cinq prestations phares interactives.

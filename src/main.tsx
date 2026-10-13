@@ -11,6 +11,7 @@ import { Reviews } from "@/components/Reviews";
 import { Booking } from "@/components/Booking";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
+import { WhatsAppCTA } from "@/components/WhatsAppCTA";
 import { CentrePage, ContactPage, RecommendationsPage } from "@/components/ContentPage";
 import { AudiencePage } from "@/components/AudiencePage";
 import { CategoryPage } from "@/components/CategoryPage";
@@ -58,6 +59,7 @@ function App() {
       <main>{page}</main>
       <Footer />
       <FloatingCTA />
+      <WhatsAppCTA />
       <Toaster position="top-center" richColors />
       <div className="h-20 md:hidden" />
     </QueryClientProvider>
