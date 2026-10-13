@@ -1,8 +1,9 @@
-import { ArrowLeft, CalendarDays, Check, Heart, ShieldCheck, Sparkles } from "lucide-react";
+import { ArrowLeft, CalendarDays, Check } from "lucide-react";
 import aboutImg from "@/assets/studio-zahaa-about.jpg.asset.json";
 import { Booking } from "@/components/Booking";
 import { Contact } from "@/components/Contact";
 import { Button } from "@/components/ui/button";
+import { StudioValues } from "@/components/StudioValues";
 
 type PageIntroProps = {
   eyebrow: string;
@@ -35,24 +36,6 @@ function BackHome() {
     </Button>
   );
 }
-
-const values = [
-  {
-    icon: Heart,
-    title: "Écoute & personnalisation",
-    text: "Chaque rendez-vous commence par un échange attentif afin d’adapter le soin à vos besoins, votre peau et vos attentes.",
-  },
-  {
-    icon: Sparkles,
-    title: "Expertise & exigence",
-    text: "Les gestes, les protocoles et les technologies sont sélectionnés avec précision pour privilégier la qualité et la justesse.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Douceur & confiance",
-    text: "L’hygiène, le confort et le respect de votre rythme sont au cœur de chaque expérience au Studio Zahaa.",
-  },
-];
 
 export function CentrePage() {
   return (
@@ -89,26 +72,10 @@ export function CentrePage() {
           </div>
         </div>
       </section>
-      <section className="bg-secondary/40 py-20 md:py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center">
-            <span className="text-xs uppercase tracking-[0.35em] text-gold">Nos engagements</span>
-            <h2 className="mt-4 text-4xl md:text-5xl">Les valeurs du Studio</h2>
-          </div>
-          <div className="mt-12 grid gap-px bg-border md:grid-cols-3">
-            {values.map(({ icon: Icon, title, text }) => (
-              <article key={title} className="bg-background p-8 md:p-10">
-                <Icon className="h-7 w-7 text-gold" aria-hidden="true" />
-                <h3 className="mt-6 text-2xl">{title}</h3>
-                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{text}</p>
-              </article>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <BackHome />
-          </div>
-        </div>
-      </section>
+      <StudioValues />
+      <div className="pb-20 text-center">
+        <BackHome />
+      </div>
       <Booking />
     </>
   );
