@@ -1,7 +1,20 @@
 # Studio Zahaa
 
-> Institut de beauté haut de gamme à Asnières-sur-Seine. Soins visage, lifting coréen, laser, sourcils & cils.
+> Institut de beauté haut de gamme à Asnières-sur-Seine (99 Quai du Docteur Dervaux). Soins visage, lifting coréen, laser, électrolyse, peelings, sourcils & cils, esthétique dentaire. Réservation en ligne via Booksy ou par WhatsApp.
 
 ## Pages
 
-- [Accueil](/): Présentation de l'institut, prestations, avis clients, réservation et contact.
+- [Accueil](/): Présentation de l'institut, prestations phares, avis clients, réservation et contact.
+- [Prestations femme](/prestations/femme): Toutes les prestations destinées aux femmes, classées par catégorie.
+- [Prestations homme](/prestations/homme): Toutes les prestations destinées aux hommes, classées par catégorie.
+- [Soin du visage femme](/prestations/femme/visage) et [Soin du visage homme](/prestations/homme/visage): Soins du visage personnalisés.
+- [Soin Coréen femme](/prestations/femme/coreen): Lifting coréen et soins coréens.
+- [Beauté des sourcils femme](/prestations/femme/sourcils): Sourcils et cils.
+- [Épilation laser femme](/prestations/femme/laser) et [Épilation laser homme](/prestations/homme/laser).
+- [Peeling femme](/prestations/femme/peeling): Peelings adaptés à chaque peau.
+- [Esthétique dentaire femme](/prestations/femme/smile) et [Esthétique dentaire homme](/prestations/homme/smile).
+- [Électrolyse femme](/prestations/femme/electrolyse) et [Électrolyse homme](/prestations/homme/electrolyse).
+- [Le centre](/le-centre): L'approche du studio, ses engagements et ses valeurs.
+- [Nos recommandations](/nos-recommandations): Conseils avant et après les soins.
+- [Nous contacter](/nous-contacter): Contact WhatsApp, réservation Booksy, carte et adresse.
+- [Mentions légales](/mentions-legales): Informations éditeur, hébergement et données personnelles.

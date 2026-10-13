@@ -12,7 +12,13 @@ import { Booking } from "@/components/Booking";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 import { WhatsAppCTA } from "@/components/WhatsAppCTA";
-import { CentrePage, ContactPage, RecommendationsPage } from "@/components/ContentPage";
+import {
+  CentrePage,
+  ContactPage,
+  MentionsLegalesPage,
+  NotFoundPage,
+  RecommendationsPage,
+} from "@/components/ContentPage";
 import { AudiencePage } from "@/components/AudiencePage";
 import { CategoryPage } from "@/components/CategoryPage";
 import { categories, type Audience } from "@/data/services";
@@ -38,11 +44,13 @@ function App() {
       <RecommendationsPage />
     ) : path === "/nous-contacter" ? (
       <ContactPage />
+    ) : path === "/mentions-legales" ? (
+      <MentionsLegalesPage />
     ) : audience && !category ? (
       <AudiencePage audience={audience} />
     ) : category && audience ? (
       <CategoryPage audience={audience} categoryId={category.id} />
-    ) : (
+    ) : path === "/" ? (
       <>
         <Hero />
         <About />
@@ -50,6 +58,8 @@ function App() {
         <Reviews />
         <Booking />
       </>
+    ) : (
+      <NotFoundPage />
     );
 
   return (

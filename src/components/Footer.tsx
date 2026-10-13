@@ -39,6 +39,11 @@ export function Footer() {
                   Nous contacter
                 </a>
               </li>
+              <li>
+                <a href="/mentions-legales" className="text-ivory/80 hover:text-ivory">
+                  Mentions légales
+                </a>
+              </li>
             </ul>
           </div>
           <div>

@@ -20,7 +20,12 @@ const infoPages: Record<string, { title: string; description: string }> = {
   "/nous-contacter": {
     title: "Contact et accès | Studio Zahaa à Asnières-sur-Seine",
     description:
-      "Contactez Studio Zahaa et retrouvez l’institut au 99 Quai du Docteur Dervaux, 92600 Asnières-sur-Seine.",
+      "Contactez Studio Zahaa sur WhatsApp, réservez sur Booksy et retrouvez l’institut au 99 Quai du Docteur Dervaux, 92600 Asnières-sur-Seine.",
+  },
+  "/mentions-legales": {
+    title: "Mentions légales | Studio Zahaa",
+    description:
+      "Mentions légales du site Studio Zahaa : éditeur, hébergement et traitement des données personnelles.",
   },
 };
 
@@ -34,6 +39,9 @@ export function Seo({ path, audience, category }: SeoProps) {
   let title = HOME_TITLE;
   let description = HOME_DESCRIPTION;
 
+  const isKnownPage =
+    path === "/" || (category && audience) || audience || Boolean(infoPages[path]);
+
   if (category && audience) {
     title = `${category.label} ${audience === "femme" ? "femme" : "homme"} | Studio Zahaa`;
     description = `Découvrez les prestations ${category.label.toLocaleLowerCase("fr-FR")} pour ${audience === "femme" ? "femmes" : "hommes"} proposées par Studio Zahaa à Asnières-sur-Seine, avec durées et tarifs.`;
@@ -43,7 +51,12 @@ export function Seo({ path, audience, category }: SeoProps) {
   } else if (infoPages[path]) {
     title = infoPages[path].title;
     description = infoPages[path].description;
+  } else if (!isKnownPage) {
+    title = "Page introuvable | Studio Zahaa";
+    description = "La page demandée n’existe pas ou a été déplacée.";
   }
+
+  const isNotFound = !isKnownPage;
 
   const canonical = `${SITE_URL}${path === "/" ? "/" : path}`;
 
@@ -63,7 +76,15 @@ export function Seo({ path, audience, category }: SeoProps) {
     setContent('meta[property="og:url"]', canonical);
     setContent('meta[name="twitter:title"]', title);
     setContent('meta[name="twitter:description"]', description);
-  }, [canonical, description, title]);
+
+    let robots = document.querySelector<HTMLMetaElement>('meta[name="robots"]');
+    if (!robots) {
+      robots = document.createElement("meta");
+      robots.name = "robots";
+      document.head.appendChild(robots);
+    }
+    robots.setAttribute("content", isNotFound ? "noindex" : "index, follow");
+  }, [canonical, description, title, isNotFound]);
 
   return null;
 }

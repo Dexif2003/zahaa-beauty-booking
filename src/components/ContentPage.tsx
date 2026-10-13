@@ -16,7 +16,7 @@ function PageIntro({ eyebrow, title, introduction }: PageIntroProps) {
     <header className="bg-secondary/50 pb-20 pt-36 md:pb-24 md:pt-44">
       <div className="mx-auto max-w-4xl px-6 text-center">
         <span className="text-xs uppercase tracking-[0.4em] text-gold">{eyebrow}</span>
-        <h1 className="mt-5 text-5xl leading-tight md:text-7xl">{title}</h1>
+        <h1 className="mt-5 text-4xl leading-tight sm:text-5xl md:text-7xl">{title}</h1>
         <div className="mx-auto my-8 h-px w-16 bg-gold" />
         <p className="mx-auto max-w-2xl text-base leading-relaxed text-foreground/75 md:text-lg">
           {introduction}
@@ -181,5 +181,92 @@ export function ContactPage() {
       </div>
       <Booking />
     </>
+  );
+}
+
+type LegalSection = { title: string; lines?: string[]; text?: string };
+
+const legalSections: LegalSection[] = [
+  {
+    title: "Éditeur du site",
+    lines: [
+      "Studio Zahaa",
+      "99 Quai du Docteur Dervaux, 92600 Asnières-sur-Seine",
+      "Contact : WhatsApp au 07 88 84 38 36",
+    ],
+  },
+  {
+    title: "Directeur de la publication",
+    lines: ["Studio Zahaa"],
+  },
+  {
+    title: "Hébergement",
+    lines: ["Netlify"],
+  },
+  {
+    title: "Propriété intellectuelle",
+    text: "L’ensemble du contenu de ce site (textes, visuels, logo) est la propriété de Studio Zahaa. Toute reproduction, même partielle, est interdite sans autorisation écrite.",
+  },
+  {
+    title: "Données personnelles",
+    text: "Les informations transmises par WhatsApp sont utilisées uniquement pour répondre à vos demandes. Elles ne sont ni revendues ni partagées avec des tiers. Vous pouvez demander leur suppression à tout moment par le même canal.",
+  },
+];
+
+export function MentionsLegalesPage() {
+  return (
+    <>
+      <PageIntro
+        eyebrow="En savoir plus"
+        title="Mentions légales"
+        introduction="Les informations relatives à l’éditeur du site, à son hébergement et au traitement de vos données."
+      />
+      <section className="py-20 md:py-28">
+        <div className="mx-auto max-w-4xl space-y-6 px-6">
+          {legalSections.map((section) => (
+            <article key={section.title} className="border border-border bg-card p-7 md:p-9">
+              <h2 className="text-2xl">{section.title}</h2>
+              <div className="my-5 h-px w-12 bg-gold" />
+              {section.text ? (
+                <p className="text-sm leading-relaxed text-muted-foreground">{section.text}</p>
+              ) : (
+                <ul className="space-y-2">
+                  {section.lines?.map((line) => (
+                    <li key={line} className="font-serif text-lg">
+                      {line}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </article>
+          ))}
+          <p className="text-center text-sm leading-relaxed text-muted-foreground">
+            Des informations complémentaires (numéro d’immatriculation, tarifs détaillés) sont
+            disponibles sur demande.
+          </p>
+          <div className="text-center">
+            <BackHome />
+          </div>
+        </div>
+      </section>
+      <Booking />
+    </>
+  );
+}
+
+export function NotFoundPage() {
+  return (
+    <section className="flex min-h-[60vh] flex-col items-center justify-center bg-secondary/50 px-6 py-36 text-center">
+      <span className="text-xs uppercase tracking-[0.4em] text-gold">Erreur 404</span>
+      <h1 className="mt-5 text-4xl leading-tight sm:text-5xl md:text-7xl">Page introuvable</h1>
+      <div className="my-8 h-px w-16 bg-gold" />
+      <p className="mx-auto max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg">
+        La page que vous cherchez n’existe pas ou a été déplacée. Retrouvez l’accueil et l’ensemble
+        de nos prestations depuis le menu.
+      </p>
+      <div className="mt-10">
+        <BackHome />
+      </div>
+    </section>
   );
 }

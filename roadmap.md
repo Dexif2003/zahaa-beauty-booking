@@ -28,15 +28,21 @@
 
 ## Points relevés par la vérification (non modifiés)
 
-- Le formulaire de contact simule un envoi : destinataire et service d’envoi nécessaires avant activation.
 - Les photos fonctionnent encore via le domaine du projet d’origine.
-- llms.txt ne liste que l’accueil.
-- Une adresse inexistante affiche l’accueil au lieu d’une page introuvable.
-- Les informations légales restent à fournir ; tarifs, avis et commodités restent à confirmer par le centre.
+- Les informations légales restent à compléter par le centre (numéro d’immatriculation, téléphone, horaires).
+
+## Finitions
+
+- [x] Remplacer le formulaire de contact par un bloc WhatsApp et la réservation Booksy.
+- [ ] Créer la page Mentions légales.
+- [ ] Afficher une page introuvable pour les adresses inexistantes.
+- [ ] Compléter llms.txt avec toutes les pages.
+- [ ] Corriger le léger débordement sur téléphone et la description d’image manquante.
+- [ ] Publier les mises à jour.
 
 ## SEO
 
 - [x] Corriger les domaines du sitemap et des règles d’indexation.
 - [x] Ajouter des titres, descriptions et adresses canoniques propres à chaque page.
 - [x] Corriger les aperçus sociaux propres à chaque page dans les limites du site actuel.
-- [ ] Activer l’envoi réel du formulaire de contact — domaine d’envoi requis.
+- [x] Remplacer le formulaire de contact par un contact WhatsApp direct et la réservation Booksy.
