@@ -1,7 +1,9 @@
 import aboutImg from "@/assets/studio-zahaa-about.jpg.asset.json";
+import { StudioValues } from "@/components/StudioValues";
 
 export function About() {
   return (
+    <>
     <section id="about" className="relative py-24 md:py-32">
       <div className="mx-auto grid max-w-7xl gap-16 px-6 md:grid-cols-2 md:items-center">
         <div className="reveal relative">
@@ -28,22 +30,10 @@ export function About() {
             comme une expérience sensorielle, alliant expertise pointue et rituels d'exception.
           </p>
 
-          <dl className="mt-10 grid gap-6 sm:grid-cols-2">
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-muted-foreground">Adresse</dt>
-              <dd className="mt-2 font-serif text-lg">99 Quai du Docteur Dervaux</dd>
-              <dd className="font-serif text-lg">92600 Asnières-sur-Seine</dd>
-            </div>
-            <div>
-              <dt className="text-xs uppercase tracking-widest text-muted-foreground">
-                Commodités
-              </dt>
-              <dd className="mt-2 font-serif text-lg">Parking disponible</dd>
-              <dd className="font-serif text-lg">Wi-Fi offert</dd>
-            </div>
-          </dl>
         </div>
       </div>
     </section>
+    <StudioValues />
+    </>
   );
 }
