@@ -46,7 +46,7 @@ export function Contact() {
               renseignement sur un soin ou réservez votre rendez-vous directement par message.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Nous vous répondons dès que possible, du lundi au samedi.
+              Nous vous répondons dès que possible.
             </p>
 
             <div className="mt-8 space-y-4">
@@ -74,7 +74,7 @@ export function Contact() {
                 Vous êtes déjà sur WhatsApp ?
               </p>
               <p className="mt-2 font-serif text-lg">
-                Le petit bouton vert en bas de l’écran ouvre aussi notre discussion.
+                Le petit bouton en bas de l’écran ouvre aussi notre discussion.
               </p>
             </div>
           </div>
