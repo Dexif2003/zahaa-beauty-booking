@@ -56,6 +56,8 @@ export function Seo({ path, audience, category }: SeoProps) {
     description = "La page demandée n’existe pas ou a été déplacée.";
   }
 
+  const isNotFound = !isKnownPage;
+
   const canonical = `${SITE_URL}${path === "/" ? "/" : path}`;
 
   useEffect(() => {
