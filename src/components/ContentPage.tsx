@@ -261,8 +261,8 @@ export function NotFoundPage() {
       <h1 className="mt-5 text-5xl leading-tight md:text-7xl">Page introuvable</h1>
       <div className="my-8 h-px w-16 bg-gold" />
       <p className="mx-auto max-w-xl text-base leading-relaxed text-foreground/75 md:text-lg">
-        La page que vous cherchez n’existe pas ou a été déplacée. Retrouvez l’accueil et
-        l’ensemble de nos prestations depuis le menu.
+        La page que vous cherchez n’existe pas ou a été déplacée. Retrouvez l’accueil et l’ensemble
+        de nos prestations depuis le menu.
       </p>
       <div className="mt-10">
         <BackHome />
