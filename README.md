@@ -30,7 +30,7 @@ Crée un site web élégant et moderne pour un institut de beauté haut de gamme
 
 ### 2. À propos
 
-- Studio de beauté fondé et animé par **Yasmina Guenniche**
+- Studio de beauté fondé et animé par **Yesmina Guenniche**
 
 - Spécialiste en soins du visage, techniques coréennes, laser et épilation
 

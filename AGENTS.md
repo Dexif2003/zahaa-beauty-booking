@@ -5,3 +5,4 @@
 - Store supplied photographic assets as Lovable Assets pointers; the published-domain absolute URL in the hero allows local Vite previews to resolve CDN media consistently.
 - Keep route-specific search metadata in `Seo`; each public page must self-reference its canonical URL.
 - Keep studio values and the WhatsApp contact URL in `src/data/studio.ts`, with a shared `StudioValues` accordion on About and Centre pages; this prevents divergent copy and keeps WhatsApp as a direct external contact link without an AI or messaging backend.
+- Keep the supplied editorial About sections in `src/data/about.ts` and render them through shared `AboutSections` on About and Centre pages so their copy and alternating photographic layout stay consistent.
