@@ -50,6 +50,13 @@ export function Footer() {
             <p className="text-xs uppercase tracking-widest text-gold">Adresse</p>
             <p className="mt-4 font-serif text-lg">99 Quai du Docteur Dervaux</p>
             <p className="font-serif text-lg">92600 Asnières-sur-Seine</p>
+            <p className="mt-4 text-xs uppercase tracking-widest text-gold">Téléphone</p>
+            <a
+              href="tel:+33788843836"
+              className="mt-2 block font-serif text-lg text-ivory/90 transition-colors hover:text-ivory"
+            >
+              +33 7 88 84 38 36
+            </a>
           </div>
         </div>
         <div className="gold-divider mt-12" />
