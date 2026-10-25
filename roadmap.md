@@ -1,5 +1,11 @@
 # Roadmap
 
+## À propos — nouvelles photos et textes
+
+- [x] Ajouter les textes fournis après la première présentation, avec une photo par section et une disposition alternée.
+- [x] Remplacer Yasmina par Yesmina et 12 ans par 16 ans.
+- [x] Vérifier les photos, les liens et l’affichage des sections.
+
 ## Modifications du studio
 
 - [x] Ajouter la bulle WhatsApp reliée au +33 7 88 84 38 36 sans recouvrir Réserver.

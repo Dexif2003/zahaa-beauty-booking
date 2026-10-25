@@ -4,6 +4,7 @@ import { Booking } from "@/components/Booking";
 import { Contact } from "@/components/Contact";
 import { Button } from "@/components/ui/button";
 import { StudioValues } from "@/components/StudioValues";
+import { AboutSections } from "@/components/AboutSections";
 
 type PageIntroProps = {
   eyebrow: string;
@@ -61,7 +62,7 @@ export function CentrePage() {
             </h2>
             <div className="my-7 h-px w-16 bg-gold" />
             <p className="leading-relaxed text-foreground/75 md:text-lg">
-              Fondé par Yasmina, Studio Zahaa conjugue savoir-faire, technologies ciblées et sens du
+              Fondé par Yesmina, Studio Zahaa conjugue savoir-faire, technologies ciblées et sens du
               détail. Ici, chaque soin est envisagé comme un moment unique : un diagnostic attentif,
               un protocole ajusté et des conseils pensés pour vous accompagner durablement.
             </p>
@@ -72,6 +73,7 @@ export function CentrePage() {
           </div>
         </div>
       </section>
+      <AboutSections />
       <StudioValues />
       <div className="pb-20 text-center">
         <BackHome />

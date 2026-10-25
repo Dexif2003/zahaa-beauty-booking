@@ -1,5 +1,6 @@
 import aboutImg from "@/assets/studio-zahaa-about.jpg.asset.json";
 import { StudioValues } from "@/components/StudioValues";
+import { AboutSections } from "@/components/AboutSections";
 
 export function About() {
   return (
@@ -21,11 +22,11 @@ export function About() {
           <div className="reveal">
             <span className="text-xs uppercase tracking-[0.4em] text-gold">À propos</span>
             <h2 className="mt-4 text-4xl md:text-5xl">
-              L'art du soin, par <span className="italic">Yasmina</span>
+              L'art du soin, par <span className="italic">Yesmina</span>
             </h2>
             <div className="my-8 h-px w-16 bg-gold" />
             <p className="text-base leading-relaxed text-foreground/80 md:text-lg">
-              Studio Zahaa est un écrin dédié à la beauté, fondé et animé par Yasmina, spécialiste
+              Studio Zahaa est un écrin dédié à la beauté, fondé et animé par Yesmina, spécialiste
               en soins du visage, techniques coréennes, laser et épilation. Chaque prestation est
               pensée comme une expérience sensorielle, alliant expertise pointue et rituels
               d'exception.
@@ -33,6 +34,7 @@ export function About() {
           </div>
         </div>
       </section>
+      <AboutSections />
       <StudioValues />
     </>
   );

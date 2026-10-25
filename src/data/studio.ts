@@ -4,7 +4,7 @@ export const WHATSAPP_URL =
 export const studioValues = [
   {
     title: "Expertise",
-    text: "Avec plus de 12 ans d’expérience dans l’esthétique, Studio Zahaa met son savoir-faire au service de votre beauté, en associant maîtrise technique, précision et professionnalisme.",
+    text: "Avec plus de 16 ans d’expérience dans l’esthétique, Studio Zahaa met son savoir-faire au service de votre beauté, en associant maîtrise technique, précision et professionnalisme.",
   },
   {
     title: "Exigence",
