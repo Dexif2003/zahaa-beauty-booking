@@ -2,9 +2,9 @@
 
 ## À propos — nouvelles photos et textes
 
-- [ ] Ajouter les textes fournis après la première présentation, avec une photo par section et une disposition alternée.
-- [ ] Remplacer Yasmina par Yesmina et 12 ans par 16 ans.
-- [ ] Vérifier les photos, les liens et l’affichage des sections.
+- [x] Ajouter les textes fournis après la première présentation, avec une photo par section et une disposition alternée.
+- [x] Remplacer Yasmina par Yesmina et 12 ans par 16 ans.
+- [x] Vérifier les photos, les liens et l’affichage des sections.
 
 ## Modifications du studio
 

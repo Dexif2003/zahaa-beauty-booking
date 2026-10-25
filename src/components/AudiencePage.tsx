@@ -36,7 +36,9 @@ export function AudiencePage({ audience }: { audience: Audience }) {
           <p className="mt-12 text-xs uppercase tracking-[0.25em] text-gold">
             Studio Zahaa · Asnières-sur-Seine
           </p>
-          <h1 className="mt-3 text-4xl leading-tight sm:text-5xl md:text-7xl">{audienceLabels[audience]}</h1>
+          <h1 className="mt-3 text-4xl leading-tight sm:text-5xl md:text-7xl">
+            {audienceLabels[audience]}
+          </h1>
           <p className="mt-5 max-w-2xl text-muted-foreground">{intros[audience]}</p>
           <a
             href={`/prestations/${other}`}
