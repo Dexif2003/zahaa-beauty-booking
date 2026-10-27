@@ -12,7 +12,7 @@ export function Hero() {
         width={928}
         height={1232}
         fetchPriority="high"
-        className="absolute inset-0 h-full w-full object-cover object-center md:object-[center_48%]"
+        className="absolute inset-0 h-full w-full object-cover object-[70%_center] md:object-[center_48%]"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-noir/55 via-noir/40 to-noir/80" />
 
