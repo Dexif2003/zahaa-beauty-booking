@@ -2,6 +2,7 @@ import maskAsset from "@/assets/studio-zahaa-masque.jpeg.asset.json";
 import brushesAsset from "@/assets/studio-zahaa-pinceaux.jpeg.asset.json";
 import greenMaskAsset from "@/assets/studio-zahaa-masque-vert.jpeg.asset.json";
 import lipsAsset from "@/assets/studio-zahaa-levres.jpeg.asset.json";
+import peelingAsset from "@/assets/studio-zahaa-peeling.jpeg.asset.json";
 import brushAsset from "@/assets/studio-zahaa-brosse.jpeg.asset.json";
 import { Button } from "@/components/ui/button";
 import { aboutSections } from "@/data/about";
@@ -12,6 +13,7 @@ const photos = [
   { url: brushesAsset.url, alt: "Pinceaux de soin couverts de mousse délicate" },
   { url: greenMaskAsset.url, alt: "Masque de soin vert appliqué sur le visage" },
   { url: lipsAsset.url, alt: "Gommage sucré appliqué sur les lèvres" },
+  { url: peelingAsset.url, alt: "Gommage peeling aux grains appliqué sur le visage" },
   { url: brushAsset.url, alt: "Brosse délicate appliquant une mousse de soin sur le visage" },
 ];
 
