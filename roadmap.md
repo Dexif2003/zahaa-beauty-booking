@@ -52,4 +52,4 @@
 - [x] Ajouter des titres, descriptions et adresses canoniques propres à chaque page.
 - [x] Corriger les aperçus sociaux propres à chaque page dans les limites du site actuel.
 - [x] Remplacer le formulaire de contact par un contact WhatsApp direct et la réservation Booksy.
-- [ ] Remplacer la photo de la dernière section « À propos » (Votre beauté, notre attention) par la photo envoyée le 27/10
+- [x] Remplacer la photo de la dernière section « À propos » (Votre beauté, notre attention) par la photo envoyée le 27/10
